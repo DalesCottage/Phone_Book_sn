@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dataset2\phone1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>phone1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\phone_book.cs">
       <DependentUpon>phone_book.xsd</DependentUpon>
     </Compile>
@@ -75,6 +80,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Dataset2\phone1.xsc">
+      <DependentUpon>phone1.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset2\phone1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>phone1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset2\phone1.xss">
+      <DependentUpon>phone1.xsd</DependentUpon>
+    </None>
     <None Include="Dataset\phone_book.xsc">
       <DependentUpon>phone_book.xsd</DependentUpon>
     </None>
